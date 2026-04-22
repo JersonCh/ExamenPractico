@@ -1,8 +1,8 @@
 ﻿# Informe de Auditoría de Sistemas - Examen de la Unidad I
 
-**Nombres y apellidos:** (Escribe tu nombre aquí)
+**Nombres y apellidos:** Jerson Roni Chambi Cori
 **Fecha:** 22 de abril de 2026
-**URL GitHub:** (Pega el enlace de tu repositorio aquí)
+**URL GitHub:** https://github.com/JersonCh/ExamenPractico 
 
 ## 1. Proyecto de Auditoría de Riesgos
 
