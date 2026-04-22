@@ -25,31 +25,36 @@ Se modificó el archivo `app.py` (Backend en Flask) integrando el cliente de `Op
 A continuación, la evaluación de 5 activos seleccionados de la lista brindada:
 
 **Activo 1: Servidor de base de datos**
-*   **Evidencia:** (Pegue aquí la captura de pantalla del frontend procesando este activo)
+*   **Evidencia:**
+ ![evidencia1](evidencia1.png)
 *   **Condición:** Acceso no autorizado a la base de datos debido a mala configuración de puertos o credenciales débiles.
 *   **Recomendación:** Implementar reglas de firewall más estrictas, utilizar autenticación robusta y cifrar los datos en reposo y tránsito.
 *   **Riesgo:** Alta
 
 **Activo 2: Aplicación Web de Banca**
-*   **Evidencia:** (Pegue aquí la captura de pantalla del frontend procesando este activo)
+*   **Evidencia:**
+![evidencia2](evidencia2.png)
 *   **Condición:** Vulnerabilidad de inyección SQL identificada en los formularios de la web.
 *   **Recomendación:** Sanitizar todas las entradas enviadas por el usuario y utilizar consultas o ORM seguro.
 *   **Riesgo:** Alta
 
 **Activo 3: Backup en NAS**
-*   **Evidencia:** (Pegue aquí la captura de pantalla del frontend procesando este activo)
+*   **Evidencia:**
+  ![evidencia3](evidencia3.png)
 *   **Condición:** Las copias de seguridad de datos sensibles se guardan en texto plano en la unidad NAS expuesta a la red interna.
 *   **Recomendación:** Encriptar físicamente los discos de los backups y restringir el acceso a usuarios/servidores con llaves.
 *   **Riesgo:** Media
 
 **Activo 4: Firewall Perimetral**
-*   **Evidencia:** (Pegue aquí la captura de pantalla del frontend procesando este activo)
+*   **Evidencia:**
+![evidencia4](evidencia4.png)
 *   **Condición:** El firewall no ha actualizado sus reglas de prevención de intrusos.
 *   **Recomendación:** Habilitar rutinas automáticas de actualización de firmas y monitorear el SIEM.
 *   **Riesgo:** Alta
 
 **Activo 5: Autenticación MFA**
-*   **Evidencia:** (Pegue aquí la captura de pantalla del frontend procesando este activo)
+*   **Evidencia:**
+![evidencia5](evidencia5.png)
 *   **Condición:** Los métodos de recuperación de contraseña SMS pueden estar interceptados (SIM Swapping).
 *   **Recomendación:** Implementar una app de autenticación de tiempo (TOTP) o tokens en hardware antes que permitir códigos SMS.
 *   **Riesgo:** Alta
