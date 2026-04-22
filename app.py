@@ -50,7 +50,7 @@ def sugerir_tratamiento():
 
 def obtener_tratamiento( riesgo ):
     response = client.chat.completions.create(
-    model="ramiro:instruct",
+    model="llama2:7b",
     messages=[
     {"role": "system", "content": "Responde en español, eres una herramienta para gestion de riesgos de la iso 27000, el usuario, te ingresara un asset tecnologico, un riesgo y un impacto, tu debes responder con un posible tratamiento en menos de 200 caracteres"},
     {"role": "user", "content": "mi telefono movil;Acceso no autorizado;un atacante puede acceder a la información personal y confidencial almacenada en el teléfono móvil, como números de teléfono, correos electrónicos y contraseñas"},
@@ -63,7 +63,7 @@ def obtener_tratamiento( riesgo ):
     return answer
 def obtener_riesgos( activo ):
     response = client.chat.completions.create(
-    model="ramiro:instruct",
+    model="llama2:7b",
     messages=[
     {"role": "system", "content": "Responde en español, eres una herramienta para gestion de riesgos de la iso 27000, el usuario, te ingresara un asset tecnologico y tu responderas con 5 posibles riesgos asociados en bullets."},
     {"role": "user", "content": "mi raspberry pi"},
